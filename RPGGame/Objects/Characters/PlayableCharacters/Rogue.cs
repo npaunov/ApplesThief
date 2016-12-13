@@ -1,15 +1,15 @@
-﻿namespace TeamAndatHypori.Objects.Characters.PlayableCharacters
+﻿namespace TeamAppleThief.Objects.Characters.PlayableCharacters
 {
     using System.Collections.Generic;
 
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Configuration;
-    using TeamAndatHypori.Enums;
-    using TeamAndatHypori.Interfaces.Characters;
-    using TeamAndatHypori.Objects.Characters.NPCs.Enemies;
-    using TeamAndatHypori.Objects.Projectiles;
+    using TeamAppleThief.Configuration;
+    using TeamAppleThief.Enums;
+    using TeamAppleThief.Interfaces.Characters;
+    using TeamAppleThief.Objects.Characters.NPCs.Enemies;
+    using TeamAppleThief.Objects.Projectiles;
 
     public class Rogue : Player, IProjectileProducable
     {
@@ -25,6 +25,10 @@
         private const int DefaultWidth = 80;
         private const int DefaultHeight = 150;
         #endregion
+
+        public Rogue() : this(0,0)
+        {
+        }
 
         public Rogue(int x, int y)
         {

@@ -1,9 +1,9 @@
-﻿namespace TeamAndatHypori.Objects.Projectiles
+﻿namespace TeamAppleThief.Objects.Projectiles
 {
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Enums;
+    using TeamAppleThief.Enums;
 
     public class Fireball : Projectile
     {

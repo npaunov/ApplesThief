@@ -1,11 +1,11 @@
-﻿using TeamAndatHypori.Interfaces.Projectiles;
+﻿using TeamAppleThief.Interfaces.Projectiles;
 
-namespace TeamAndatHypori.Objects.Projectiles
+namespace TeamAppleThief.Objects.Projectiles
 {
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Enums;
+    using TeamAppleThief.Enums;
 
     public abstract class Projectile : GameObject,IProjectile
     {

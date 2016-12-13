@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Graphics;
-using TeamAndatHypori.Enums;
+using TeamAppleThief.Enums;
 
-namespace TeamAndatHypori.Objects.Items.Equipment
+namespace TeamAppleThief.Objects.Items.Equipment
 {
     public class Boots : Equipment
     {

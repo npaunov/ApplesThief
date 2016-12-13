@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using TeamAndatHypori.Objects;
+using TeamAppleThief.Objects;
 
-namespace TeamAndatHypori.Objects
+namespace TeamAppleThief.Objects
 {
     public class Map : GameObject
     {

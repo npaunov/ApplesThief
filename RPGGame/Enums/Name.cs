@@ -1,4 +1,4 @@
-﻿namespace TeamAndatHypori.Enums
+﻿namespace TeamAppleThief.Enums
 {
     public enum Name
     {

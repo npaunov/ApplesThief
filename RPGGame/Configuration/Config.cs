@@ -1,6 +1,6 @@
-﻿using TeamAndatHypori.Struct;
+﻿using TeamAppleThief.Struct;
 
-namespace TeamAndatHypori.Configuration
+namespace TeamAppleThief.Configuration
 {
     using Microsoft.Xna.Framework.Input;
 

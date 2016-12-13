@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using TeamAndatHypori.Configuration;
-using TeamAndatHypori.CoreLogic;
-using TeamAndatHypori.Enums;
+using TeamAppleThief.Configuration;
+using TeamAppleThief.CoreLogic;
+using TeamAppleThief.Enums;
 
-namespace TeamAndatHypori.GUI
+namespace TeamAppleThief.GUI
 {
     public class Gui : Game
     {
@@ -43,7 +43,7 @@ namespace TeamAndatHypori.GUI
         public void Draw(SpriteBatch spriteBatch)
         {
             // Display inventory
-            for (int i = 0; i < this.engine.Player.Inventory.Length; i++)
+            for (int i = 0; i < this.engine.Player.Inventory.Count; i++)
             {
                 if (this.engine.Player.Inventory[i] != null)
                 {
@@ -52,9 +52,9 @@ namespace TeamAndatHypori.GUI
             }
 
             // Display current equipment
-            foreach (var slot in this.engine.Player.PlayerEquipment)
+            foreach (var item in this.engine.Player.PlayerEquipment)
             {
-                spriteBatch.Draw(slot.Value.Image,this.equipmentSlotPositions[slot.Key],Color.White);
+                spriteBatch.Draw(item.Image,this.equipmentSlotPositions[item.Slot],Color.White);
             }
 
             // Labels

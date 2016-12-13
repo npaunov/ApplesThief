@@ -1,12 +1,12 @@
-﻿namespace TeamAndatHypori.Objects.Characters.NPCs.Enemies
+﻿namespace TeamAppleThief.Objects.Characters.NPCs.Enemies
 {
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Enums;
-    using TeamAndatHypori.Interfaces.Characters;
-    using TeamAndatHypori.Objects.Characters.PlayableCharacters;
-    using TeamAndatHypori.Objects.Projectiles;
+    using TeamAppleThief.Enums;
+    using TeamAppleThief.Interfaces.Characters;
+    using TeamAppleThief.Objects.Characters.PlayableCharacters;
+    using TeamAppleThief.Objects.Projectiles;
 
     public class OrcArcher : Enemy, IProjectileProducable
     {

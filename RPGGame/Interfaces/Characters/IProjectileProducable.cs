@@ -1,6 +1,6 @@
-﻿namespace TeamAndatHypori.Interfaces.Characters
+﻿namespace TeamAppleThief.Interfaces.Characters
 {
-    using TeamAndatHypori.Objects.Projectiles;
+    using TeamAppleThief.Objects.Projectiles;
 
     public interface IProjectileProducable
     {

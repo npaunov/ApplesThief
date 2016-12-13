@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TeamAndatHypori.Enums;
+using TeamAppleThief.Enums;
 
-namespace TeamAndatHypori.Interfaces.Projectiles
+namespace TeamAppleThief.Interfaces.Projectiles
 {
     public interface IProjectile
     {

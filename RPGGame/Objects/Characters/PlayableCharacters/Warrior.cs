@@ -1,4 +1,4 @@
-﻿namespace TeamAndatHypori.Objects.Characters.PlayableCharacters
+﻿namespace TeamAppleThief.Objects.Characters.PlayableCharacters
 {
     using System;
     using System.Collections.Generic;
@@ -6,10 +6,10 @@
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Configuration;
-    using TeamAndatHypori.Enums;
-    using TeamAndatHypori.Objects.Characters.NPCs.Enemies;
-    using TeamAndatHypori.Objects.Items;
+    using TeamAppleThief.Configuration;
+    using TeamAppleThief.Enums;
+    using TeamAppleThief.Objects.Characters.NPCs.Enemies;
+    using TeamAppleThief.Objects.Items;
 
     public class Warrior : Player
     {
@@ -26,6 +26,10 @@
         private const int DefaultHeight = 150;
         #endregion
         private static Random rand;
+
+        public Warrior() : this(0,0)
+        {
+        }
 
         public Warrior(int x, int y)
         {

@@ -1,8 +1,8 @@
-﻿namespace TeamAndatHypori.Objects
+﻿namespace TeamAppleThief.Objects
 {
     using Microsoft.Xna.Framework;
 
-    using TeamAndatHypori.Enums;
+    using TeamAppleThief.Enums;
 
     public class Explosion : GameObject
     {

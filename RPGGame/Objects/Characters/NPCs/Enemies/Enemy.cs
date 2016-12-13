@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using TeamAndatHypori.Configuration;
-using TeamAndatHypori.Interfaces.Characters;
+using TeamAppleThief.Configuration;
+using TeamAppleThief.Interfaces.Characters;
 
-namespace TeamAndatHypori.Objects.Characters.NPCs.Enemies
+namespace TeamAppleThief.Objects.Characters.NPCs.Enemies
 {
-    using TeamAndatHypori.Enums;
-    using TeamAndatHypori.Objects.Characters.PlayableCharacters;
+    using TeamAppleThief.Enums;
+    using TeamAppleThief.Objects.Characters.PlayableCharacters;
 
     public abstract class Enemy : Character,IEnemy
     {

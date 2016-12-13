@@ -1,9 +1,9 @@
-﻿namespace TeamAndatHypori.Objects.Characters.NPCs.Enemies
+﻿namespace TeamAppleThief.Objects.Characters.NPCs.Enemies
 {
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Enums;
+    using TeamAppleThief.Enums;
 
     public class OrcLord : Enemy
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TeamAndatHypori.Interfaces.Characters
+namespace TeamAppleThief.Interfaces.Characters
 {
     public interface ICharacter
     {

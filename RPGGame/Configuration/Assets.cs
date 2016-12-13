@@ -1,4 +1,4 @@
-﻿namespace TeamAndatHypori.Configuration
+﻿namespace TeamAppleThief.Configuration
 {
     public static class Assets
     {

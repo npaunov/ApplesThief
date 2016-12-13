@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace TeamAndatHypori.Objects.Items.Consumables
+namespace TeamAppleThief.Objects.Items.Consumables
 {
     public class DefensePotion : Potion
     {

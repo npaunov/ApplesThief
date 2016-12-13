@@ -1,12 +1,14 @@
-﻿using TeamAndatHypori.Interfaces.Characters;
+﻿using TeamAppleThief.Interfaces.Characters;
 
-namespace TeamAndatHypori.Objects.Characters
+namespace TeamAppleThief.Objects.Characters
 {
+    using System.ComponentModel.DataAnnotations.Schema;
+
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Configuration;
-    using TeamAndatHypori.Enums;
+    using TeamAppleThief.Configuration;
+    using TeamAppleThief.Enums;
 
     public abstract class Character : GameObject,ICharacter
     {
@@ -26,16 +28,22 @@ namespace TeamAndatHypori.Objects.Characters
 
         public int Health { get; set; }
 
+        [NotMapped]
         public int AttackRadius { get; protected set; }
 
+        [NotMapped]
         public BoundingBox AttackBounds { get; protected set; }
 
+        [NotMapped]
         public Direction Direction { get; set; }
 
+        [NotMapped]
         public State State { get; set; }
 
+        [NotMapped]
         public int AnimationFrame { get; set; }
 
+        [NotMapped]
         public int AnimationDelay { get; set; }
 
         public bool Intersects(BoundingBox box)

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TeamAndatHypori.Objects.Characters.NPCs.Enemies
+namespace TeamAppleThief.Objects.Characters.NPCs.Enemies
 {
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    using TeamAndatHypori.Configuration;
-    using TeamAndatHypori.Enums;
+    using TeamAppleThief.Configuration;
+    using TeamAppleThief.Enums;
 
     public class Orc : Enemy
     {

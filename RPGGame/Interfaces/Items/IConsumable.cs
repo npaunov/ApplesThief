@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TeamAndatHypori.Interfaces.Items
+namespace TeamAppleThief.Interfaces.Items
 {
     public interface IConsumable : IItem
     {

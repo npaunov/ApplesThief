@@ -1,6 +1,6 @@
-﻿namespace TeamAndatHypori.Interfaces.Items
+﻿namespace TeamAppleThief.Interfaces.Items
 {
-    using TeamAndatHypori.Enums;
+    using TeamAppleThief.Enums;
 
     public interface IEquipable
     {

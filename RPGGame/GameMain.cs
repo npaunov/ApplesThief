@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Windows.Forms;
-using TeamAndatHypori.CoreLogic;
-using TeamAndatHypori.Exceptions;
+using TeamAppleThief.CoreLogic;
+using TeamAppleThief.Exceptions;
 
-namespace TeamAndatHypori
+namespace TeamAppleThief
 {
     class GameMain
     {
         static void Main(string[] args)
         {
+            var context = new RPGGameDBContext();
             try
             {
-                using ( var engine = new Engine())
+                using ( var engine = new Engine(context))
                 {
                     engine.Run();
                 }
@@ -23,6 +24,7 @@ namespace TeamAndatHypori
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
+                MessageBox.Show(e.StackTrace);
             }
         }
     }

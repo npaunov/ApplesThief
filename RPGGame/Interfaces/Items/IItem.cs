@@ -1,4 +1,4 @@
-﻿namespace TeamAndatHypori.Interfaces.Items
+﻿namespace TeamAppleThief.Interfaces.Items
 {
     public interface IItem
     {

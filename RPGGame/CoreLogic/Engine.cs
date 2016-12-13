@@ -12,19 +12,22 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Audio;
-using TeamAndatHypori.Objects.Characters.NPCs.Enemies;
-using TeamAndatHypori.Objects.Characters.PlayableCharacters;
-using TeamAndatHypori.Objects.Items;
-using TeamAndatHypori.Objects.Projectiles;
-using TeamAndatHypori.Configuration;
-using TeamAndatHypori.Enums;
-using TeamAndatHypori.GUI;
-using TeamAndatHypori.Objects;
-using TeamAndatHypori.Objects.Items.Consumables;
-using TeamAndatHypori.Objects.Items.Equipment;
+using TeamAppleThief.Objects.Characters.NPCs.Enemies;
+using TeamAppleThief.Objects.Characters.PlayableCharacters;
+using TeamAppleThief.Objects.Items;
+using TeamAppleThief.Objects.Projectiles;
+using TeamAppleThief.Configuration;
+using TeamAppleThief.Enums;
+using TeamAppleThief.GUI;
+using TeamAppleThief.Objects;
+using TeamAppleThief.Objects.Items.Consumables;
+using TeamAppleThief.Objects.Items.Equipment;
 
-namespace TeamAndatHypori.CoreLogic
+namespace TeamAppleThief.CoreLogic
 {
+    using System.Data.Entity.Migrations;
+    using System.IO;
+
     using Microsoft.Xna.Framework.Input;
 
     public class Engine : Game
@@ -32,6 +35,7 @@ namespace TeamAndatHypori.CoreLogic
         public readonly Item[] AllEquipments = new Item[7];
         public readonly Item[] AllPotions = new Item[3];
 
+        private RPGGameDBContext context;
         private static readonly Random Rand = new Random();
         private GameState state;
         private int wave;
@@ -132,8 +136,9 @@ namespace TeamAndatHypori.CoreLogic
         public Texture2D[] Explosion { get; private set; }
         #endregion
 
-        public Engine()
+        public Engine(RPGGameDBContext context)
         {
+            this.context = context;
             this.graphics = new GraphicsDeviceManager(this);
             this.state = GameState.Pick;
             Content.RootDirectory = "Resources";
@@ -612,6 +617,8 @@ namespace TeamAndatHypori.CoreLogic
                     this.state = GameState.Play;
                     this.Player.OnDeath += (sender, args) =>
                     {
+                        this.context.Players.AddOrUpdate(x=>x.Name, new Warrior(0,0));
+                        this.context.SaveChanges();
                         this.GameOver.Play();
                         this.state = GameState.Defeat;
                     };
@@ -703,6 +710,8 @@ namespace TeamAndatHypori.CoreLogic
                     }
                     else if(this.wave == 2)
                     {
+                        this.context.Players.AddOrUpdate(x=>x.Name,this.Player);
+                        this.context.SaveChanges();
                         this.BossKill.Play();
                         this.state = GameState.Win;
                     }

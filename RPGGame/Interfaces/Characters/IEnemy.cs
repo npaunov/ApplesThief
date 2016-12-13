@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TeamAndatHypori.Interfaces.Characters
+namespace TeamAppleThief.Interfaces.Characters
 {
     public interface IEnemy
     {
